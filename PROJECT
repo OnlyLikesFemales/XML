@@ -1,0 +1,25 @@
+ <!DOCTYPE Widgets [
+        <!ELEMENT Widgets (Widget+)>
+        <!ELEMENT Widget 
+    (Company,Name,DateCreated,Programmers,DateOfLastUpdate,Images)>
+        <!ATTLIST Widget category CDATA "Misc">
+        <!ELEMENT Company (#PCDATA)>
+        <!ELEMENT Name (#PCDATA)>
+        <!ELEMENT DateCreated (#PCDATA)>
+        <!ELEMENT category (#PCDATA)>
+        <!ELEMENT Programmers (#PCDATA)>
+        <!ELEMENT DateOfLastUpdate (#PCDATA)>
+        <!ELEMENT Images (#PCDATA)>
+        <!ENTITY Comp "Accove Pty Ltd">
+]>
+  
+    <Widgets>  
+         <Widget category=" "> 
+               <Company> &Comp; </Company>
+               <Name> Bensons </Name>
+               <DateCreated> 01/07/2011 </DateCreated>
+               <Programmers> Ben Smith, John Doe </Programmers>
+               <DateOfLastUpdate> 06/12/15 </DateOfLastUpdate>
+               <Images> image/wealth1.jpg </Images>
+          </Widget>
+    </Widgets>
